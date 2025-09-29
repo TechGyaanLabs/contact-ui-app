@@ -1,0 +1,168 @@
+/* Contact Management System Styles */
+
+.action-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.action-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-icon {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.edit-icon:hover {
+    background-color: #e0a800;
+    color: #000;
+}
+
+.delete-icon {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-icon:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+/* Empty state styling */
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1rem;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table styling improvements */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .action-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    .table {
+        font-size: 0.875rem;
+    }
+}
+
+/* Button hover effects */
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Search input styling */
+input[placeholder="Search Contact"] {
+    border-radius: 25px;
+    padding-left: 15px;
+}
+
+input[placeholder="Search Contact"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Toast animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Toast styling */
+.toast-alert {
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+}
+
+.toast-alert.alert-success {
+    background-color: #d1edff;
+    color: #0c5460;
+    border-left: 4px solid #28a745;
+}
+
+.toast-alert.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.toast-alert.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 4px solid #ffc107;
+}
+
+.toast-alert.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-left: 4px solid #17a2b8;
+}

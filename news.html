@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Top New Items</title>
+</head>
+<body>
+    <div class="container-fluid py-4 bg-primary text-white text-center">
+        <p class="display-6">Top News from different Countries and Categories</p>
+        <p class="text justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor nesciunt laboriosam, necessitatibus doloremque consequatur, illum quod obcaecati suscipit ad itaque, ratione perspiciatis ab? Esse, atque nulla! Quo, tenetur quibusdam.
+        </p>
+    </div>
+
+    <div class="container mt-3">
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <select class="form-select" id="idCountry">
+                    <option value="us" selected>USA</option>
+                    <option value="in" >India</option>
+                    <option value="uk">UK</option>
+                    <option value="au">Australia</option>
+                    <option value="ca">Canada</option>
+                    <option value="fr">France</option>
+                    <option value="de">Germany</option>
+                    <option value="it">Italy</option>
+                    <option value="jp">Japan</option>
+                    <option value="ru">Russia</option>
+                    <option value="sa">Saudi Arabia</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="idCategory">
+                    <option value="general" selected>General</option>
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" id="idFetchNewsBtn">Fetch News</button>
+            </div>
+             <div class="col-md-2"></div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-10 offset-md-1 mt-3">
+                <div id="idShowNewsItems">
+                    <!-- Dynamic News -->
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
