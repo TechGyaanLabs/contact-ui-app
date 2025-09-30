@@ -3,7 +3,7 @@ const idSearchEle = document.getElementById("idSearch");
 const saveContactBtn = document.getElementById("saveContactBtn");
 const addContactForm = document.getElementById("addContactForm");
 
-const baseUrl = "http://localhost:8082/api/v1/contacts";
+const baseUrl = "https://contact-server-app-ty7k.onrender.com/api/v1/contacts";
 
 // Global variables for edit functionality
 let currentEditContact = null;
